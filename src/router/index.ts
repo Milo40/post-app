@@ -12,9 +12,9 @@ const router = createRouter({
     {
       path: '/post',
       name: 'post',
+      // @ts-ignore
       component: () => import('../views/PostView.vue')
     }
-
   ]
 })
 
