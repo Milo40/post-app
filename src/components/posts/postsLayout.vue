@@ -29,7 +29,6 @@ export default {
       try {
         const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
         this.articles = response.data
-        console.log('News fetched : ', this.articles)
       } catch (error) {
         console.error('Error fetching news : ', error)
       }

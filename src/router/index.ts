@@ -14,6 +14,12 @@ const router = createRouter({
       name: 'post',
       // @ts-ignore
       component: () => import('../views/PostView.vue')
+    },
+    {
+      path: '/posts/details',
+      name: 'show-post',
+      // @ts-ignore
+      component: () => import('../views/ShowPostView.vue')
     }
   ]
 })
